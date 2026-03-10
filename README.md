@@ -17,9 +17,9 @@
 
 ## How to Run Locally (Using Docker)
 The application is fully containerized. To run the API and Database together:
-Ensure Docker Desktop is running.
-Open your terminal in the project root folder.
-Run:
+- Ensure Docker Desktop is running.
+- Open your terminal in the project root folder.
+- Run:
 ```bash
 docker-compose up --build
 ```
@@ -29,11 +29,14 @@ http://localhost:8000/docs
 
 ## Manual Setup (Optional)
 If you prefer to run it without Docker:
-Create a virtual environment: python -m venv venv
-Activate it: .\venv\Scripts\activate
-Install dependencies: pip install -r requirements.txt
-Configure your .env with a local PostgreSQL URL.
-Start the server: uvicorn main:app --reload
+- Create a virtual environment: python -m venv venv
+- Activate it: .\venv\Scripts\activate
+- Install dependencies: pip install -r requirements.txt
+- Configure your .env with a local PostgreSQL URL.
+- Start the server:
+  ```
+  uvicorn main:app --reload
+  ```
 
 ## Example API Requests
 Follow these steps in the Swagger UI (/docs) to test the system:
