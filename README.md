@@ -1,19 +1,19 @@
 ## Subscription-Based Content API
-A robust FastAPI backend developed for the GDG recruitment process. This platform manages user subscriptions, enforces a premium content paywall, and provides admin-level analytics via CSV reports.
+- A robust FastAPI backend developed for the GDG recruitment process. This platform manages user subscriptions, enforces a premium content paywall, and provides admin-level analytics via CSV reports.
 
 ## Tech Stack
-Framework: FastAPI (Python)
-Database: PostgreSQL
-Authentication: OAuth2 with JWT Bearer Tokens
-Environment: Docker & Docker Compose
+- Framework: FastAPI (Python)
+- Database: PostgreSQL
+- Authentication: OAuth2 with JWT Bearer Tokens
+- Environment: Docker & Docker Compose
 
 ## Features Implemented
-Role-Based Access Control: Distinct 'Free' and 'Premium' user tiers.
-Premium Paywall: Custom middleware to protect sensitive endpoints.
-Subscription Management: Simulated payment logic for instant account upgrades.
-30-Day Expiration: Logic to automatically revoke premium status after 30 days.
-Activity Logging: Database logging for every premium content access.
-Admin Reporting: Secure endpoint to download usage logs as a CSV file.
+- Role-Based Access Control: Distinct 'Free' and 'Premium' user tiers.
+- Premium Paywall: Custom middleware to protect sensitive endpoints.
+- Subscription Management: Simulated payment logic for instant account upgrades.
+- 30-Day Expiration: Logic to automatically revoke premium status after 30 days.
+- Activity Logging: Database logging for every premium content access.
+- Admin Reporting: Secure endpoint to download usage logs as a CSV file.
 
 ## How to Run Locally (Using Docker)
 The application is fully containerized. To run the API and Database together:
