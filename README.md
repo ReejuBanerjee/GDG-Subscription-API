@@ -15,6 +15,8 @@
 - Activity Logging: Database logging for every premium content access.
 - Admin Reporting: Secure endpoint to download usage logs as a CSV file.
 
+## 📸 Application Demo
+
 ## How to Run Locally (Using Docker)
 The application is fully containerized. To run the API and Database together:
 - Ensure Docker Desktop is running.
