@@ -76,9 +76,9 @@ Note: User must have the is_admin flag (Register with username admin for testing
 Result: Downloads a monthly_usage_report.csv file.
 
 ## Project Structure
-main.py: Main application entry point and routes.
-models.py: SQLAlchemy database models.
-schemas.py: Pydantic models for request/response validation.
-database.py: Database engine and session configuration.
-Dockerfile & docker-compose.yml: Containerization configuration.
-.gitignore: Prevents sensitive and temporary files from being tracked.
+- main.py: Main application entry point and routes.
+- models.py: SQLAlchemy database models.
+- schemas.py: Pydantic models for request/response validation.
+- database.py: Database engine and session configuration.
+- Dockerfile & docker-compose.yml: Containerization configuration.
+- .gitignore: Prevents sensitive and temporary files from being tracked.
