@@ -47,33 +47,33 @@ POST /register
 }
 ```
 2. Login & Authenticate
-POST /login
+- POST /login
 Use the 'Try it out' button.
 Enter the credentials created above.
 Tip: Copy the access_token or use the green Authorize button at the top of the page to lock in your session.
 
 3. Upgrade to Premium
-POST /upgrade
-Click 'Execute' while authenticated.
+- POST /upgrade
+- Click 'Execute' while authenticated.
 This grants Premium status and sets a 30-day expiration date.
 
 4. Access Protected Content
-GET /content/premium
-Premium Users: Receive a "Welcome to the VIP lounge" message.
-Free Users: Receive a 403 Forbidden error.
+- GET /content/premium
+- Premium Users: Receive a "Welcome to the VIP lounge" message.
+- Free Users: Receive a 403 Forbidden error.
 
 5. Admin Access & Security
-To test the administrative features, you must be logged in as an Admin user
-How to gain Admin status:
-Automatic Admin: Register a user with the exact username admin. The backend logic is configured to grant this user super-user privileges.
-Endpoints unlocked:
-GET /admin/logs: View a JSON list of every premium access event (User ID, Endpoint, IP Address, and Timestamp).
-GET /admin/reports/csv: Generates and downloads a live CSV report of all activity.
+- To test the administrative features, you must be logged in as an Admin user
+- How to gain Admin status:
+  Automatic Admin: Register a user with the exact username admin. The backend logic is configured to grant this user super-user privileges.
+- Endpoints unlocked:
+- GET /admin/logs: View a JSON list of every premium access event (User ID, Endpoint, IP Address, and Timestamp).
+- GET /admin/reports/csv: Generates and downloads a live CSV report of all activity.
 
 6. Admin Report (CSV)
-GET /admin/reports/csv
-Note: User must have the is_admin flag (Register with username admin for testing).
-Result: Downloads a monthly_usage_report.csv file.
+- GET /admin/reports/csv
+- Note: User must have the is_admin flag (Register with username admin for testing).
+- Result: Downloads a monthly_usage_report.csv file.
 
 ## Project Structure
 - main.py: Main application entry point and routes.
