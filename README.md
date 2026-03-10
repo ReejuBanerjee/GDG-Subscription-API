@@ -15,6 +15,8 @@
 - Activity Logging: Database logging for every premium content access.
 - Admin Reporting: Secure endpoint to download usage logs as a CSV file.
 
+---
+
 ## 📸 Application Screenshots
 
 ### 🖥️ API Documentation (Swagger UI)
@@ -23,17 +25,23 @@
 ### 🔐 Authentication & Security
 **User Registration & JWT Token Generation**
 ![Registration](./screenshots/register.png)
-![JWT Token](./screenshots/jwtaccesstoken.png)
+![Login Success](./screenshots/login.png)
+![JWT Access Token](./screenshots/jwtaccesstoken.png)
+![OAuth2 Configuration](./screenshots/OAuth2.png)
 
 ### 💳 Subscription & Paywall Logic
-**Access Denied (Free Tier) vs. Access Granted (Premium Tier)**
+**Access Denied vs. Premium Access**
 ![Unauthorized Access](./screenshots/unauthorized.png)
+![Access Denied Detail](./screenshots/premiumfail.png)
+![Upgrade Process](./screenshots/upgrade.png)
 ![Premium Content Access](./screenshots/premiumpass.png)
 
 ### 📊 Admin Analytics & Reporting
 **Activity Logs & CSV Export Proof**
 ![Admin Logs](./screenshots/csv.png)
-![CSV Download](./screenshots/csvinstallproof.png)
+![CSV Download Confirmation](./screenshots/csvinstallproof.png)
+
+---
 
 ## How to Run Locally (Using Docker)
 The application is fully containerized. To run the API and Database together:
