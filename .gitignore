@@ -1,0 +1,18 @@
+# Python environment
+venv/
+env/
+.venv/
+
+# Caches
+__pycache__/
+*.py[cod]
+
+# Secret keys (Recruiters will use their own or see your template)
+.env
+
+# Docker data (This stops the massive database files from being zipped)
+postgres_data/
+
+# OS files
+.DS_Store
+Thumbs.db
