@@ -53,7 +53,7 @@ POST /register
 - POST /login
 Use the 'Try it out' button.
 Enter the credentials created above.
-Tip: Copy the access_token or use the green Authorize button at the top of the page to lock in your session.
+- Tip: Copy the access_token or use the green Authorize button at the top of the page to lock in your session.
 
 3. Upgrade to Premium
 - POST /upgrade
