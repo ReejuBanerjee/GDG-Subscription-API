@@ -10,7 +10,7 @@ import csv
 import io
 
 models.Base.metadata.create_all(bind=database.engine)
-app = FastAPI(title="GDG Premium API - Ultimate Edition")
+app = FastAPI(title="Premium Content API with JWT Authentication")
 
 SECRET_KEY = "super-secret-gdg-key-2026"
 ALGORITHM = "HS256"
